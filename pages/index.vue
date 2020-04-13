@@ -315,8 +315,8 @@ export default {
         groupCells: true,
         wrapAround: false,
         freeScroll: true,
-        freeScrollFriction: 0.075,
-        selectedAttraction: 0.01,
+        freeScrollFriction: 0.04,
+        // selectedAttraction: 0.02,
         // friction: 0.15,
       },
     }

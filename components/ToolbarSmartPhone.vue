@@ -1,13 +1,13 @@
 <template>
-  <div ref="ToolbarSmartPhone" class="fixed bottom-0 w-full h-16 transition-300">
+  <div ref="ToolbarSmartPhone" class="fixed bottom-0 w-full h-16 transition-250">
       <div ref="categories"
-           class="absolute left-0 bottom-0 z-100 w-12 h-12 m-2 transition-300"
+           class="absolute left-0 bottom-0 z-100 w-12 h-12 m-2 transition-250"
       >
-        <div ref="categoriesMenu"
-             class="relative w-full h-full bg-indigo-550 rounded-xl shadow-lg transition-300"
+        <div id="categoriesMenu"
+             class="relative w-full h-full bg-indigo-550 rounded-xl shadow-lg transition-250"
         >
           <div v-if="categoriesMenuIsOpen" class="slide-right h-full text-gray-300 overflow-y-scroll pr-2">
-            <div class="flex py-2">
+            <div class="py-2">
               <div class="pb-1 px-4 title-14 text-white-100">
                 <span class="text-indigo-300">#</span>
                 <span>Hauptketagorien</span>
@@ -17,7 +17,7 @@
             </div>
 
             <div class="slide-right mb-1"
-                 style="animation-delay: .11s"
+                 style="animation-delay: .01s"
             >
               <div class="flex justify-between items-center py-1 px-2 bg-white-10 rounded-r-full">
                 <div class="flex items-center">
@@ -33,7 +33,7 @@
             </div>
 
             <div class="slide-right mb-1"
-                 style="animation-delay: .13s"
+                 style="animation-delay: .03s"
             >
               <div class="flex justify-between items-center py-1 px-2 bg-white-10 rounded-r-full">
                 <div class="flex items-center">
@@ -49,7 +49,7 @@
             </div>
 
             <div class="slide-right mb-1"
-                 style="animation-delay: .14s"
+                 style="animation-delay: .04s"
             >
               <div class="flex justify-between items-center py-1 px-2 bg-white-10 rounded-r-full">
                 <div class="flex items-center">
@@ -65,7 +65,7 @@
             </div>
 
             <div class="slide-right mb-1"
-                 style="animation-delay: .15s"
+                 style="animation-delay: .05s"
             >
               <div class="flex justify-between items-center py-1 px-2 bg-white-10 rounded-r-full">
                 <div class="flex items-center">
@@ -81,7 +81,7 @@
             </div>
 
             <div class="slide-right mb-1"
-                 style="animation-delay: .16s"
+                 style="animation-delay: .06s"
             >
               <div class="flex justify-between items-center py-1 px-2 bg-white-10 rounded-r-full">
                 <div class="flex items-center">
@@ -97,7 +97,7 @@
             </div>
 
             <div class="slide-right mb-1"
-                 style="animation-delay: .17s"
+                 style="animation-delay: .07s"
             >
               <div class="flex justify-between items-center py-1 px-2 bg-white-10 rounded-r-full">
                 <div class="flex items-center">
@@ -114,7 +114,7 @@
             </div>
 
             <div class="slide-right mb-1"
-                 style="animation-delay: .18s"
+                 style="animation-delay: .08s"
             >
               <div class="flex justify-between items-center py-1 px-2 bg-white-10 rounded-r-full">
                 <div class="flex items-center">
@@ -130,7 +130,7 @@
             </div>
 
             <div class="slide-right mb-1"
-                 style="animation-delay: .19s"
+                 style="animation-delay: .09s"
             >
               <div class="flex justify-between items-center py-1 px-2 bg-white-10 rounded-r-full">
                 <div class="flex items-center">
@@ -146,7 +146,7 @@
             </div>
 
             <div class="slide-right mb-1"
-                 style="animation-delay: .20s"
+                 style="animation-delay: .10s"
             >
               <div class="flex justify-between items-center py-1 px-2 bg-white-10 rounded-r-full">
                 <div class="flex items-center">
@@ -162,7 +162,7 @@
             </div>
 
             <div class="slide-right mb-1"
-                 style="animation-delay: .21s"
+                 style="animation-delay: .11s"
             >
               <div class="flex justify-between items-center py-1 px-2 bg-white-10 rounded-r-full">
                 <div class="flex items-center">
@@ -178,7 +178,7 @@
             </div>
 
             <div class="slide-right mb-1"
-                 style="animation-delay: .22s"
+                 style="animation-delay: .12s"
             >
               <div class="flex justify-between items-center py-1 px-2 bg-white-10 rounded-r-full">
                 <div class="flex items-center">
@@ -194,7 +194,7 @@
             </div>
 
             <div class="slide-right mb-1"
-                 style="animation-delay: .23s"
+                 style="animation-delay: .13s"
             >
               <div class="flex justify-between items-center py-1 px-2 bg-white-10 rounded-r-full">
                 <div class="flex items-center">
@@ -210,7 +210,7 @@
             </div>
 
             <div class="slide-right mb-1"
-                 style="animation-delay: .24s"
+                 style="animation-delay: .14s"
             >
               <div class="flex justify-between items-center py-1 px-2 bg-white-10 rounded-r-full">
                 <div class="flex items-center">
@@ -226,7 +226,7 @@
             </div>
 
             <div class="slide-right mb-1"
-                 style="animation-delay: .25s"
+                 style="animation-delay: .15s"
             >
               <div class="flex justify-between items-center py-1 px-2 bg-white-10 rounded-r-full">
                 <div class="flex items-center">
@@ -242,7 +242,7 @@
             </div>
 
             <div class="slide-right mb-1"
-                 style="animation-delay: .26s"
+                 style="animation-delay: .16s"
             >
               <div class="flex justify-between items-center py-1 px-2 bg-white-10 rounded-r-full">
                 <div class="flex items-center">
@@ -258,7 +258,7 @@
             </div>
 
             <div class="slide-right mb-1"
-                 style="animation-delay: .27s"
+                 style="animation-delay: .17s"
             >
               <div class="flex justify-between items-center py-1 px-2 bg-white-10 rounded-r-full">
                 <div class="flex items-center">
@@ -274,7 +274,7 @@
             </div>
 
             <div class="slide-right mb-1"
-                 style="animation-delay: .28s"
+                 style="animation-delay: .18s"
             >
               <div class="flex justify-between items-center py-1 px-2 bg-white-10 rounded-r-full">
                 <div class="flex items-center">
@@ -290,7 +290,7 @@
             </div>
 
             <div class="slide-right mb-1"
-                 style="animation-delay: .29s"
+                 style="animation-delay: .19s"
             >
               <div class="flex justify-between items-center py-1 px-2 bg-white-10 rounded-r-full">
                 <div class="flex items-center">
@@ -306,7 +306,7 @@
             </div>
 
             <div class="slide-right mb-1"
-                 style="animation-delay: .30s"
+                 style="animation-delay: .20s"
             >
               <div class="flex justify-between items-center py-1 px-2 bg-white-10 rounded-r-full">
                 <div class="flex items-center">
@@ -322,7 +322,7 @@
             </div>
 
             <div class="slide-right mb-1"
-                 style="animation-delay: .31s"
+                 style="animation-delay: .21s"
             >
               <div class="flex justify-between items-center py-1 px-2 bg-white-10 rounded-r-full">
                 <div class="flex items-center">
@@ -338,7 +338,7 @@
             </div>
 
             <div class="slide-right mb-1"
-                 style="animation-delay: .32s"
+                 style="animation-delay: .22s"
             >
               <div class="flex justify-between items-center py-1 px-2 bg-white-10 rounded-r-full">
                 <div class="flex items-center">
@@ -354,7 +354,7 @@
             </div>
 
             <div class="slide-right mb-1"
-                 style="animation-delay: .33s"
+                 style="animation-delay: .23s"
             >
               <div class="flex justify-between items-center py-1 px-2 bg-white-10 rounded-r-full">
                 <div class="flex items-center">
@@ -370,7 +370,7 @@
             </div>
 
             <div class="slide-right mb-1"
-                 style="animation-delay: .34s"
+                 style="animation-delay: .24s"
             >
               <div class="flex justify-between items-center py-1 px-2 bg-white-10 rounded-r-full">
                 <div class="flex items-center">
@@ -386,7 +386,7 @@
             </div>
 
             <div class="slide-right mb-1"
-                 style="animation-delay: .35s"
+                 style="animation-delay: .25s"
             >
               <div class="flex justify-between items-center py-1 px-2 bg-white-10 rounded-r-full">
                 <div class="flex items-center">
@@ -402,7 +402,7 @@
             </div>
 
             <div class="slide-right mb-1"
-                 style="animation-delay: .36s"
+                 style="animation-delay: .26s"
             >
               <div class="flex justify-between items-center py-1 px-2 bg-white-10 rounded-r-full">
                 <div class="flex items-center">
@@ -420,10 +420,10 @@
           </div>
 
           <div @click="openCategoriesMenu" class="text-white-100">
-            <svg ref="categoriesMenuIcon" class="w-12 h-12 absolute left-0 bottom-0 p-3 fill-current transition-300" viewBox="0 0 143.01 112.6"><rect width="17.01" height="17.01" rx="8.5"/><rect x="28.77" y="4.46" width="114.24" height="8.09" rx="4.04"/><rect y="47.8" width="17.01" height="17.01" rx="8.5"/><rect x="28.77" y="52.25" width="114.24" height="8.09" rx="4.04"/><rect y="95.59" width="17.01" height="17.01" rx="8.5"/><rect x="28.77" y="100.05" width="114.24" height="8.09" rx="4.04"/></svg>
-            <svg ref="categoriesMenuCloseIcon"
+            <svg id="categoriesMenuIcon" class="w-12 h-12 absolute left-0 bottom-0 p-3 fill-current transition-250" viewBox="0 0 143.01 112.6"><rect width="17.01" height="17.01" rx="8.5"/><rect x="28.77" y="4.46" width="114.24" height="8.09" rx="4.04"/><rect y="47.8" width="17.01" height="17.01" rx="8.5"/><rect x="28.77" y="52.25" width="114.24" height="8.09" rx="4.04"/><rect y="95.59" width="17.01" height="17.01" rx="8.5"/><rect x="28.77" y="100.05" width="114.24" height="8.09" rx="4.04"/></svg>
+            <svg id="categoriesMenuCloseIcon"
                 style="backdrop-filter: blur(2px)"
-                 class="w-12 h-12 absolute left-0 bottom-0 p-3 bg-white-30 rounded-xl opacity-0 fill-current transition-300" viewBox="0 0 237.35 232.68"
+                 class="w-12 h-12 absolute left-0 bottom-0 p-3 bg-white-30 rounded-xl opacity-0 fill-current transition-250" viewBox="0 0 237.35 232.68"
             ><path d="M1.49,224a5.06,5.06,0,0,0,3.59,8.65,5,5,0,0,0,3.58-1.48L231.16,8.67a5.07,5.07,0,0,0,0-7.17h0a5.08,5.08,0,0,0-7.18,0Z"/><path d="M13.33,1.49A5.06,5.06,0,0,0,4.68,5.08,5,5,0,0,0,6.16,8.66l222.53,222.5a5.07,5.07,0,0,0,7.17,0h0a5.06,5.06,0,0,0,0-7.18Z"/></svg>
           </div>
         </div>
@@ -431,14 +431,14 @@
 
       <div class="flex justify-center">
         <div ref="productSearch"
-          class="absolute bottom-0 z-100 w-14 h-14 p-3 mb-2 flex justify-center items-center rounded-xl bg-indigo-600 shadow-lg transition-300"
+          class="absolute bottom-0 z-100 w-14 h-14 p-3 mb-2 flex justify-center items-center rounded-xl bg-indigo-600 shadow-lg transition-250"
         >
           <svg class="h-8 text-white-100 fill-current" viewBox="0 0 446.25 446.25"><path d="M318.75,280.5h-20.4l-7.65-7.65c25.5-28.05,40.8-66.3,40.8-107.1A165.75,165.75,0,1,0,165.75,331.5c40.8,0,79.05-15.3,107.1-40.8l7.65,7.65v20.4L408,446.25,446.25,408Zm-153,0A114.75,114.75,0,1,1,280.5,165.75,114.27,114.27,0,0,1,165.75,280.5Z"/></svg>
         </div>
       </div>
 
       <div ref="shoppingCart"
-        class="absolute right-0 bottom-0 z-100 w-12 h-12 mx-2 mb-2 p-3 flex justify-center items-center bg-indigo-550 rounded-xl shadow-lg transition-300"
+        class="absolute right-0 bottom-0 z-100 w-12 h-12 mx-2 mb-2 p-3 flex justify-center items-center bg-indigo-550 rounded-xl shadow-lg transition-250"
       >
         <div class="relative">
           <div class="absolute" style="top: -.75rem">
@@ -466,36 +466,20 @@ export default {
       if (this.categoriesMenuIsOpen === false) {
         this.categoriesMenuIsOpen = true
 
+        this.$refs.ToolbarSmartPhone.classList.add('h-full')
         this.$refs.productSearch.classList.add('opacity-0')
         this.$refs.shoppingCart.classList.add('opacity-0')
 
-        this.$refs.ToolbarSmartPhone.classList.add('h-full')
-
-        this.$refs.categoriesMenu.classList.remove('rounded-xl')
-        this.$refs.categoriesMenuIcon.classList.add('rotate-540', 'opacity-0')
-        this.$refs.categoriesMenuCloseIcon.classList.add('rotate-540', 'opacity-100', 'm-2')
-
-
-        this.$refs.categories.classList.add('w-full', 'h-full')
-        this.$refs.categories.classList.remove('m-2')
+        this.$refs.categories.classList.add('categories')
 
       } else {
         this.categoriesMenuIsOpen = false
 
+        this.$refs.ToolbarSmartPhone.classList.remove('h-full')
         this.$refs.productSearch.classList.remove('opacity-0')
         this.$refs.shoppingCart.classList.remove('opacity-0')
 
-        this.$refs.ToolbarSmartPhone.classList.remove('h-full')
-
-        this.$refs.categoriesMenu.classList.add('rounded-xl')
-        this.$refs.categoriesMenuIcon.classList.remove('rotate-540', 'opacity-0')
-        this.$refs.categoriesMenuCloseIcon.classList.remove('rotate-540', 'opacity-100', 'm-2')
-
-
-        this.$refs.categories.classList.remove('w-full', 'h-full')
-        this.$refs.categories.classList.add('m-2')
-
-
+        this.$refs.categories.classList.remove('categories')
       }
     }
   }
@@ -503,5 +487,21 @@ export default {
 </script>
 
 <style lang="scss">
-  @import '../sass/app';
+@import '../sass/app';
+
+.categories {
+  @apply w-full h-full m-0;
+
+  #categoriesMenu {
+    @apply rounded-none;
+  }
+
+  #categoriesMenuIcon {
+    @apply rotate-540 opacity-0;
+  }
+
+  #categoriesMenuCloseIcon {
+    @apply rotate-540 opacity-100 m-2;
+  }
+}
 </style>

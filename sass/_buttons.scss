@@ -1,0 +1,378 @@
+/* purgecss start ignore */
+
+// *************** Buttons *************** //
+
+.btn {
+  @apply flex items-center justify-center cursor-pointer;
+  @apply py-1 px-4;
+  @apply font-medium text-center leading-normal tracking-wide title-12 no-underline whitespace-no-wrap text-blue-800;
+  transition: .1s !important;
+  @apply border border-blue-700 rounded-full;
+
+  &:hover { @apply text-white-100 bg-blue-900; }
+  &:focus { @apply shadow-none; }
+
+  &-green {
+    @apply text-green-800 border-green-700;
+    &:hover { @apply bg-green-900 border-green-900; }
+  }
+
+  &-orange {
+    @apply text-orange-800 border-orange-700;
+    &:hover { @apply bg-orange-900 border-orange-900; }
+  }
+
+  &-purple {
+    @apply text-purple-800 border-purple-700;
+    &:hover { @apply bg-purple-900 border-purple-900; }
+  }
+
+  &-teal {
+    @apply text-teal-800 border-teal-700 bg-transparent;
+    &:hover { @apply bg-teal-800 border-teal-800; }
+  }
+
+  &-indigo {
+    @apply text-indigo-800 border-indigo-700;
+    &:hover { @apply bg-indigo-800 border-indigo-800; }
+  }
+
+  &-red {
+    @apply text-red-800 border-red-700;
+    &:hover { @apply bg-red-900 border-red-900; }
+  }
+
+  &-gray {
+    @apply text-gray-800 border-gray-700;
+    &:hover { @apply bg-gray-800 border-gray-900; }
+  }
+
+  &-white {
+    @apply bg-white-5 text-white-100 border-white-100;
+    &:hover { @apply bg-white-100 border-white-100 text-black; }
+  }
+}
+
+.btn-filled {
+  @apply bg-blue-700 text-white-100 border-1 font-medium;
+
+  &:hover { @apply bg-white-100 text-blue-700; }
+  &:focus { @apply shadow-none; }
+
+  &-green {
+    @apply bg-green-700 text-white-100 border-green-700;
+    &:hover { @apply  bg-white-100 text-green-700; }
+  }
+
+  &-orange {
+    @apply bg-orange-700 text-white-100 border-orange-700;
+    &:hover { @apply  bg-white-100 text-orange-700; }
+  }
+
+  &-purple {
+    @apply bg-purple-700 text-white-100 border-purple-700;
+    &:hover { @apply  bg-white-100 text-purple-700; }
+  }
+
+  &-indigo {
+    @apply bg-indigo-700 text-white-100 border-indigo-700;
+    &:hover { @apply  bg-white-100 text-indigo-700; }
+  }
+
+  &-red {
+    @apply bg-red-800 text-white-100 border-red-800;
+    &:hover { @apply  bg-white-100 text-red-800; }
+  }
+
+  &-gray {
+    @apply bg-gray-700 text-white-100 border-gray-700;
+    &:hover { @apply  bg-white-100 text-gray-700; }
+  }
+
+  &-white {
+    @apply bg-white-100 text-black border-white-100;
+    &:hover { @apply  bg-transparent text-white-100; }
+  }
+}
+
+.hover-underline {
+  a { @apply relative no-underline cursor-pointer tracking-wide transition-300 pb-1 whitespace-no-wrap; }
+
+  a:before {
+    @apply absolute bottom-0 right-0 w-full h-1px bg-gray-700 transition-900;
+    max-width: 0px;
+    content: "";
+  }
+
+  a:hover:before {
+    @apply transition-900;
+    max-width: 5000px;
+  }
+
+  &-white a:before {
+    @apply bg-white-100;
+  }
+
+  &-purple a:before {
+    @apply bg-purple-800;
+  }
+
+  &-gray a:before {
+    @apply bg-gray-600;
+  }
+}
+
+.hover-link {
+  a {
+    @apply relative cursor-pointer transition-300 py-1 px-2 rounded-xs whitespace-no-wrap;
+    @apply no-underline tracking-wide;
+    @apply bg-blue-5 text-blue-800;
+  }
+
+  a:before {
+    @apply absolute bottom-0 right-0 w-full h-full bg-blue-10 transition-300 rounded-xs;
+    max-width: 0px;
+    content: "";
+  }
+
+  a:hover:before {
+    @apply transition-600;
+    max-width: 5000px;
+  }
+
+  &-green {
+    a { @apply bg-green-5 text-green-800; }
+    a:before { @apply bg-green-10; }
+  }
+
+  &-purple {
+    a { @apply bg-purple-5 text-purple-800; }
+    a:before { @apply bg-purple-10; }
+  }
+
+  &-orange {
+    a { @apply bg-orange-5 text-orange-800; }
+    a:before { @apply bg-orange-10; }
+  }
+
+  &-gray {
+    a { @apply bg-gray-5 text-gray-800; }
+    a:before { @apply bg-gray-10; }
+  }
+
+  &-white {
+    a { @apply bg-white-5 text-white-100; }
+    a:before { @apply bg-white-10; }
+  }
+
+}
+
+
+// *************** Überschriften *************** //
+
+.header {
+  @apply text-black text-center tracking-wide title-14 font-semibold;
+  @apply block w-full my-6 p-2 border-b border-t border-black rounded;
+
+  @screen md { @apply title-16; }
+
+  &-blue {
+    @apply border-b border-blue-800 text-blue-800;
+
+    &:hover {
+      @apply border-blue-600 text-blue-600 cursor-pointer;
+    }
+  }
+
+  &-green {
+    @apply border-b border-green-800 text-green-800;
+
+    &:hover {
+      @apply border-green-600 text-green-600 cursor-pointer;
+    }
+  }
+
+  &-orange {
+    @apply border-b border-orange-800 text-orange-800;
+
+    &:hover {
+      @apply border-orange-600 text-orange-600 cursor-pointer;
+    }
+  }
+
+  &-purple {
+    @apply border-b border-purple-800 text-purple-800;
+
+    &:hover {
+      @apply border-purple-600 text-purple-600 cursor-pointer;
+    }
+  }
+
+  &-white {
+    @apply text-white-100 border-white-100;
+  }
+
+}
+
+/**************************** Mobile-Buttons ****************************/
+
+.mobile-btn {
+  @apply relative w-12 h-12 z-100 cursor-pointer;
+
+  @screen lg {  @apply hidden;  }
+
+  input[type=checkbox] {
+    @apply hidden;
+  }
+
+  input[type=checkbox] + label {
+    @apply w-12 h-12 z-10 p-0 m-2 transition-600;
+    top: 5px;
+
+    b {
+      @apply block m-2 opacity-100 rounded transition-900;
+      height: 3px;
+
+    }
+  }
+
+  input[type=checkbox]:checked ~ .mobile-btn-content {
+    transform: translateX(0);
+  }
+
+  input[type=checkbox]:checked + label {
+    @apply fixed left-0 z-100 cursor-pointer;
+
+    top: 62px;
+    @screen md { top: 76px; }
+
+    b { @apply bg-white-100; }
+
+    b.line-1 {
+      margin-right: 7px;
+      height: 4px;
+      transform: rotate(45deg) translateY(7px) translateX(8px);
+    }
+
+    b.line-2 { @apply opacity-0; }
+
+    b.line-3 {
+      height: 4px;
+      transform: rotate(-45deg) translateY(-8px) translateX(10px);
+    }
+  }
+}
+
+.mobile-btn-right {
+  input[type=checkbox]:checked + label {
+    @apply right-0 left-auto;
+  }
+}
+
+.mobile-btn-content {
+  @apply flex flex-col fixed top-0 right-0 transition-300 block pt-16 overflow-y-hidden;
+
+  min-width: 100vw;
+  min-height: 100vh;
+
+  transform: translateX(101%);
+
+  &-left {
+    @apply left-0;
+    transform: translateX(-101%);
+  }
+}
+
+
+/**************************** File-Button ****************************/
+
+input[type=file] { display: none; }
+
+input[type=file] + label {
+  @apply w-full inline-block self-center cursor-pointer;
+  @apply py-1 px-4;
+  @apply text-center leading-normal tracking-wide truncate title-16 no-underline whitespace-no-wrap text-black;
+  @apply transition-150;
+  @apply border-1 border-gray-800 rounded;
+
+  &:hover { @apply text-gray-300 bg-gray-800; }
+  &:focus { @apply shadow-none; }
+}
+
+input[type=file]:focus + label,
+input[type=file] + label:hover {
+  @apply text-white-100 bg-gray-800;
+}
+
+input[type=file] + label * {
+  pointer-events: none;
+}
+
+/**************************** Suborder-Options ****************************/
+
+.btn-suborder-options {
+  @apply h-full cursor-pointer;
+
+
+  .suborder-options {
+    @apply absolute top-0 left-0 flex items-center;
+    @apply  rounded-xs shadow-md m-4 p-4 border-t-2 border-b-2 bg-white-100 border-gray-800 transition-150 invisible opacity-0;
+    z-index: 1000000;
+    transform: translate(0, 0) scale(0);
+
+    @screen md {
+      transform: translate(-25%, -25%) scale(0);
+    }
+
+  }
+
+  &:hover {
+    .suborder-options {
+      @apply opacity-100 visible;
+      transform: translate(0, 0) scale(1);
+
+      @screen md {
+        transform: translate(-25%, -25%) scale(1);
+      }
+
+    }
+  }
+}
+
+
+/**************************** Suborder-List ****************************/
+
+
+.btn-suborder-list {
+  @apply h-full cursor-pointer;
+
+  .suborder-list {
+    @apply flex flex-col absolute right-0 text-gray-800 max-h-40;
+    @apply  rounded-xs shadow-md p-4 border-t-2 border-b-2 bg-white-100 border-gray-800 transition-150 invisible opacity-0;
+    max-width: 300px;
+    z-index: 1000000;
+    transform: translate(0, 0) scale(0);
+
+    @screen md {
+      max-width: 400px;
+      transform: translate(150px, -25%) scale(0);
+    }
+
+    @screen lg {
+      max-width: 32rem;
+    }
+  }
+
+  &:hover {
+    .suborder-list {
+      @apply opacity-100 visible;
+
+      @screen md {
+        transform: translate(150px, -25%) scale(1);
+      }
+    }
+  }
+}
+
+
+/* purgecss end ignore */

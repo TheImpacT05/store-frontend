@@ -7,8 +7,13 @@
 .transition-600 {transition: $transition-600}
 .transition-900 {transition: $transition-900}
 
+.rotate-45 { transform: rotate(45deg) }
 .rotate-90 { transform: rotate(90deg) }
 .rotate-180 { transform: rotate(180deg) }
 .rotate-540 { transform: rotate(540deg) }
 .rotate--90 { transform: rotate(-90deg) }
+
+.translate-0 { transform: translate(0%, 0%) }
+.translate-left-100 { transform: translateX(-100%) }
+.translate-right-100 { transform: translateX(100%) }
 /* purgecss end ignore */

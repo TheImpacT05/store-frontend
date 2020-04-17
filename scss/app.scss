@@ -1,0 +1,37 @@
+// Fonts
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i');
+
+// Custom
+@import "animation";
+@import "flickity";
+@import "buttons";
+@import "container";
+@import "font-properties";
+@import "utilities";
+@import "transitions";
+
+// App Configuration
+main { @apply h-full overflow-x-hidden; }
+
+html {
+  line-height: 1.15;
+  letter-spacing: .03em;
+}
+
+body {
+  font-size: calc(13px + (17 - 13) * ((100vw - 320px) / (3860 - 320)));
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+  @screen md {
+    display: block;
+    width: 5px;
+  }
+  @screen lg { width: 6px; }
+  @screen xl { width: 7px; }
+}
+body::-webkit-scrollbar-thumb { @apply rounded-full bg-indigo-550; }

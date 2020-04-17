@@ -1,0 +1,201 @@
+//************************* SC-HEADER *************************//
+.sc-header-transition-enter {
+  @apply translate--100 w-12 h-12;
+  left: calc(100% - .5rem);
+  top: calc(100% - .5rem);
+}
+
+.sc-header-transition-move, .sc-header-transition-enter-active , .sc-header-transition-leave-active {
+  @apply absolute transition-700 rounded-xl;
+}
+
+.sc-header-transition-enter-to, .sc-header-transition-leave, {
+  @apply left-0 top-0 w-full h-48;
+}
+
+//************************* FADE *************************//
+.fade-enter {
+  @apply opacity-0;
+  transform: translateY(10px);
+}
+
+.fade-move, .fade-enter-active, .fade-leave-active {
+  @apply transition-300;
+}
+
+.fade-enter-to, .fade-leave {
+  @apply opacity-100 translate-0;
+}
+
+//************************* FADE *************************//
+.fade-right-enter {
+  @apply translate-X--10 opacity-0;
+}
+
+.fade-right-move, .fade-right-enter-active, .fade-right-leave-active {
+  @apply transition-300;
+}
+
+.fade-right-enter-to, .fade-right-leave {
+  @apply translate-0 opacity-100;
+}
+
+//************************* SCALE-IN *************************//
+.scale-in-enter {
+  @apply scale-0;
+}
+
+.scale-in-move, .scale-in-enter-active, .scale-in-leave-active {
+  @apply transition-500 overflow-hidden;
+}
+
+.scale-in-enter-to, .scale-in-leave {
+  @apply scale-100;
+}
+
+//************************* SCALE-IN *************************//
+.scale-right-enter {
+  @apply w-0;
+}
+
+.scale-right-move, .scale-right-enter-active, .scale-right-leave-active {
+  @apply transition-500 overflow-hidden;
+}
+
+.scale-right-enter-to, .scale-right-leave {
+  @apply w-full;
+}
+
+//************************* FADE *************************//
+.opacity-transition-enter {
+  @apply opacity-0;
+}
+
+.opacity-transition-move,
+.opacity-transition-enter-active,
+.opacity-transition-leave-active {
+  @apply transition-500;
+}
+
+.opacity-transition-enter-to,
+.opacity-transition-leave {
+  @apply opacity-100;
+}
+
+//************************* SLIDER *************************//
+.slider-enter {
+  transform: translateX(-100%);
+  @apply opacity-0;
+}
+
+.slider-move,
+.slider-enter-active,
+.slider-leave-active {
+  @apply transition-300;
+}
+
+.slider-enter-to,
+.slider-leave {
+  transform: translateX(0%);
+  @apply opacity-100;
+}
+
+.slider-leave-to {
+  transform: translateX(100%);
+  @apply opacity-0;
+}
+
+//************************* slide-left-center *************************//
+.slide-left-center-enter {
+  @apply translate-left-100;
+}
+
+.slide-left-center-move,
+.slide-left-center-enter-active,
+.slide-left-center-leave-active {
+  @apply transition-900 absolute;
+}
+
+.slide-left-center-enter-to,
+.slide-left-center-leave {
+  @apply translate-0;
+}
+
+.slide-left-center-leave-to {
+  @apply translate-right-100;
+}
+
+//************************* slide-right-center*************************//
+.slide-right-center-enter {
+  @apply translate-right-100;
+}
+
+.slide-right-center-move,
+.slide-right-center-enter-active,
+.slide-right-center-leave-active {
+  @apply transition-300 absolute;
+}
+
+.slide-right-center-enter-to,
+.slide-right-center-leave {
+  @apply translate-0;
+}
+
+.slide-right-center-leave-to {
+  @apply translate-right-100;
+}
+
+
+//************************* POP-OUT *************************//
+
+.pop-out-enter { @apply translate-Y--10 opacity-0; }
+
+.pop-out-move,
+.pop-out-enter-active,
+.pop-out-leave-active {
+  @apply transition-150;
+}
+
+.pop-out-enter-to,
+.pop-out-leave {
+  @apply translate-Y-0 opacity-100;
+}
+
+.pop-out-leave-to { @apply translate-Y--10 opacity-0;}
+
+
+//************************* LIST *************************//
+
+.list-enter-active, .list-leave-active {
+  @apply transition-600;
+}
+.list-enter, .list-leave-to {
+  opacity: 0;
+  transform: translateX(-100vw);
+}
+
+
+//************************* SLIDE-OUT *************************//
+
+.slide-out-enter-active {
+  animation: slide-out .15s ease-in;
+}
+.slide-out-leave-active {
+  animation: slide-out .15s reverse ease-out;
+}
+
+.slide-out-move { @apply transition-300; }
+
+@keyframes slide-out {
+  0% {
+    opacity: 0;
+    height: 0rem;
+    overflow-y: hidden;
+  }
+
+  100% {
+    opacity: 1;
+    height: 44rem;
+    overflow-y: hidden;
+  }
+}

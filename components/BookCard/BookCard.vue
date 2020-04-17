@@ -58,8 +58,8 @@
 </template>
 
 <script>
-import BookCardCover from '../components/BookCardCover.vue'
-import BookCardProductTypeSelection from '../components/BookCardProductTypeSelection.vue'
+import BookCardCover from '../BookCard/BookCardCover.vue'
+import BookCardProductTypeSelection from '../BookCard/BookCardProductTypeSelection.vue'
 
 export default {
   components: {
@@ -68,3 +68,5 @@ export default {
   },
 }
 </script>
+
+<style lang="scss"></style>
